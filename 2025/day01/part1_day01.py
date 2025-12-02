@@ -1,7 +1,6 @@
 from pathlib import Path
 
 
-
 def part_1(lines: list):
     password = 0
     i_x = 50
@@ -16,6 +15,7 @@ def part_1(lines: list):
         if i_x == 0:
             password += 1
     return password
+
 
 def part_2(lines):
     i_x = 50
@@ -32,6 +32,7 @@ def part_2(lines):
                 password += 1
     return password
 
+
 def main():
     # File path
     root = Path(__file__).parent
@@ -41,10 +42,9 @@ def main():
         for line in f:
             lines.append(line.strip())
 
-    print(f'Part 1: {part_1(lines)}')
-    print(f'Part 2: {part_2(lines)}')
-    print(5%100)
+    print(f"Part 1: {part_1(lines)}")
+    print(f"Part 2: {part_2(lines)}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
-        
